@@ -11,7 +11,7 @@ get '/' do
   urls = Array.new
   
   begin
-    url = 'http://' + alphabet[Random.rand(1...5)] + countries[Random.rand(1...1)]
+    url = 'http://' + alphabet[Random.rand(1...5)] + countries[0]
     urls << url
     i +=1
   end until i == iteration
